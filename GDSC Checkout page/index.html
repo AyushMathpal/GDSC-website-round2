@@ -18,12 +18,16 @@
     <div class="detail-form">
       <div class="contact-information">
         <h2>Contact Information</h2>
+
         <form class="top-form" action="index.html" method="post">
           <label >E-mail</label>
-          <input type="email " class="input-style" placeholder="Enter your email..." id="email" name="" value="">
+
+            <input type="email " class="input-style" placeholder="Enter your email..." id="email" name="" value="" required>
+
+
           <label>Phone</label>
 
-              <input type="tel" class="input-style" placeholder="Enter your phone..." id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+              <input type="tel" class="input-style" placeholder="Enter your phone..." id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
 
 
         </form>
@@ -32,24 +36,24 @@
       <div class="shipping-address">
         <h2>Shipping Address</h2>
 
-        <form class="bottom-form" action="index.html" method="post">
+        <form onsubmit="Alert()" class="bottom-form" action="index.html" method="post" name="formcontact">
           <label >Full Name</label>
-          <input type="text" class="input-style" placeholder="Your Full Name.." id="full-name" name="" value="">
+          <input type="text" class="input-style" placeholder="Your Full Name.." id="full-name" name="name" value="" required>
           <label>Address</label>
-          <input type="text" class="input-style" placeholder="Your Address.." id="address" name="" value="">
+          <input type="text" class="input-style" placeholder="Your Address.." id="address" name="" value="" required>
           <label >City</label>
-          <input type="text" class="input-style" placeholder="Your City.." id="city" name="" value="">
+          <input type="text" class="input-style" placeholder="Your City.." id="city" name="" value="" required>
 
           <div class="country-postal-code">
             <label for="country">Country</label><br >
-            <input type="text" class="input-style" placeholder="Your Country.." id="country" name="" value="">
+            <input type="text" class="input-style" placeholder="Your Country.." id="country" name="" value="" required>
             <label for="postal-code"> Postal Code</label>
-            <input type="number" class="input-style" placeholder="Your Postal Code.." id="postal-code" name="" value="">
+            <input type="number" class="input-style" placeholder="Your Postal Code.." id="postal-code" name="" value="" required>
           </div>
 
           <input type="checkbox" id="save-information" name="" value="">
           <label for="save-information">Save this information for later</label>
-          <button type="submit" class="submit-button" name="button">Continue</button>
+          <button type="submit" class="submit-button" name="button"  >Continue</button>
 
         </form>
       </div>
