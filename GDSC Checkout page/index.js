@@ -21,3 +21,10 @@ function Increment2(){
 value.innerText=output;
 if(output<0){value.innerText=0;}
 }
+function Alert(){
+  alert("Data Validation Successfull");
+
+}
+function ValidateEmail(event, inputText){
+   event.preventDefault();
+}
